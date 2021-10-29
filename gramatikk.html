@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="gramatikk.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <style>
+        
+
+    </style>
+    <body>
+        <h2 style="text-align:center;margin-left: auto; margin-right: auto;width: 50em;">
+            Welcome to the Norwegian Language Grammatikk lessons!</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Select Training Type</button>
+                <div class="dropdown-content">
+                 
+                  <a href="index.html">Sentence structure</a>
+                  <a href="index.html">Conversation</a>
+                  <a href="index.html">Connect the words</a>
+             </div>
+            </div>
+    <div class="homeimg">
+      <img  id= "image" src="images/home.png" alt="a robot " width="300" height="300" />
+    </div>
+
+    <div class="container">
+        <span class="gender">
+            <label>
+                <input id ="man" type="radio" name="gender">Man sound
+            </label>
+            <label>
+                <input id= "damme" type="radio" name="gender">Lady sound
+            </label>
+            <label>
+                <input id="robot" type="radio" name="gender">Robotic sound
+            </label>
+            
+        </span>
+        
+
+    </div>
+    <div class="vol">
+        <p style="color: blueviolet;">Adjust volume </p>
+        <button style="font-size:24px">Button <i class="fa fa-volume-up"></i></button>
+
+    </div>
+    
+           
+            <div class="back">
+                <a class ="back" href="index.html">Back</a>
+            </div>
+            
+        
+    
+            
+            <script>
+             $(document).ready(function () {
+        $('input[type="radio"]').click(function () {
+            if ($(this).attr('id') == 'man') {
+                $('#image').innerHTML.src="images/manStemme.png";
+               } 
+               if ($(this).attr('id') == 'damme') {
+                $('#image').innerHTML.src="images/dammeStemme.png";
+               } 
+               else {
+                $('#image').innerHTML.src="images/home.png"; 
+               }
+              
+            
+        });
+    });
+               </script>  
+    
+        
+    </body>
+</html>
+
+
+
